@@ -1,0 +1,74 @@
+#scene {
+    position: relative;
+    width: 1000px;
+    height: 600px;
+    border: solid 1px;
+}
+#background {
+    position: absolute;
+    width: 1000px;
+    height: 600px;
+    border: solid 1px;
+}
+#bgr {
+    width: 7%;
+    right: 170px;
+    bottom: 158px;
+
+}
+.info{
+    text-align: center;
+    position: absolute;
+    top: 50px;
+    left: 30%;
+}
+img {
+    position: absolute;
+    background-size: cover;
+}
+
+#cat {
+    height: 60%;
+    width: 60%;
+    right: 350px;
+    bottom: 70px;
+}
+
+#mouse {
+    height: 10%;
+    width: 10%;
+    right: 200px;
+    bottom: 170px;
+    display: none;
+}
+
+#cheeze {
+    left: 80px;
+    width: 10%;
+    height: 10%;
+    bottom: 100px;
+    display: none;
+}
+
+#zzz {
+    width: 30%;
+    height: 30%;
+    top: 200px;
+    left: 100px;
+    display: none;
+}
+.magicStuff{
+    animation: magicStuff 2s ease-in 3;
+    transform-origin: bottom;
+}
+@keyframes magicStuff{
+    0%,100%{ transform:scale(1,1);}
+    50%{ transform:scale(1.2,2);}
+}
+
+#runningjerry {
+    width: 30%;
+    height: 30%;
+    top: 200px;
+    left: 100px;
+}
