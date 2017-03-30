@@ -1,74 +1,256 @@
-#scene {
-    position: relative;
-    width: 1000px;
-    height: 600px;
-    border: solid 1px;
+#scene{
+    width:95vw;
+    height: 50vw;
+    background-image: url(images/background.jpg);
+    background-size: contain;
+    background-repeat: no-repeat
 }
-#background {
-    position: absolute;
-    width: 1000px;
-    height: 600px;
-    border: solid 1px;
-}
-#bgr {
-    width: 7%;
-    right: 170px;
-    bottom: 158px;
 
+#hole{
+    width: 6vw;
+    display:block;
+    margin-top: 31vw;
+    margin-left: 68vw;
 }
-.info{
-    text-align: center;
+
+.clickLeft{
+    width: 20vw;
     position: absolute;
-    top: 50px;
-    left: 30%;
+    margin-top: 19vw;
+    margin-left: 18vw;
 }
+
+.clickRight{
+    width: 15vw;
+    position: absolute;
+    margin-top: 19vw;
+    margin-left: 56vw;
+    display: none;
+}
+
+
 img {
     position: absolute;
-    background-size: cover;
 }
 
 #cat {
-    height: 60%;
-    width: 60%;
-    right: 350px;
-    bottom: 70px;
+    width: 32%;
+    margin-top: 32%;
+    margin-left: 10%;
 }
 
-#mouse {
-    height: 10%;
-    width: 10%;
-    right: 200px;
-    bottom: 170px;
+#catOpenedEyes {
+    width: 32%;
+    margin-top: 32%;
+    margin-left: 10%;
     display: none;
 }
+
+
 
 #cheeze {
-    left: 80px;
-    width: 10%;
-    height: 10%;
-    bottom: 100px;
-    display: none;
+    left: 4%;
+    margin-top:42%;
+    width: 6%;
 }
 
 #zzz {
-    width: 30%;
-    height: 30%;
-    top: 200px;
-    left: 100px;
+    width: 16%;
+    margin-top: 23%;
+    margin-left: 19%;
     display: none;
 }
+
+.clickHereLoop{
+    animation: clickHereLoop 3s ease;
+    animation-iteration-count: infinite;
+}
+@keyframes clickHereLoop{
+    0%, 100% {margin-top: 19vw;
+    margin-left: 18vw}
+    50%{margin-top: 17vw;
+    margin-left: 19vw;}
+
+
+}
+
+.clickRightAnim{
+    animation: clickRightAnim 3s ease;
+    animation-iteration-count: infinite;
+}
+@keyframes clickRightAnim{
+    0%, 100% {margin-top: 21vw;
+    margin-left: 57vw}
+    50%{margin-top: 19vw;
+    margin-left: 55vw;}
+
+
+}
+
+
+#mouse {
+    width: 7%;
+    margin-left: 63vw;
+    margin-top: 30vw;
+    display: none;
+}
+
+.jerryStart{
+    animation: jerryAppears 2s forwards;
+    transition-timing-function: ease-in;
+}
+@keyframes jerryAppears{
+    0%, 10%{
+    margin-left: 63vw;
+    margin-top: 30vw;
+    }
+    50%{margin-left: 45vw;
+    margin-top: 42vw;}
+    90%{margin-left: 5vw;
+    margin-top: 38vw;}
+    100%{margin-left: 5vw;
+    margin-top: 38vw;}
+}
+
+
+
 .magicStuff{
-    animation: magicStuff 2s ease-in 3;
+    animation: magicStuff 5s;
     transform-origin: bottom;
+    animation-iteration-count: infinite;
 }
 @keyframes magicStuff{
     0%,100%{ transform:scale(1,1);}
-    50%{ transform:scale(1.2,2);}
+    50%{ transform:scale(1.2,1.7);}
 }
 
-#runningjerry {
-    width: 30%;
-    height: 30%;
-    top: 200px;
-    left: 100px;
+.runningjerry {
+    width: 10vw;
+    margin-top: 35vw;
+    margin-left: 2vw;
+    display: none;
 }
+
+.runningJerryWithCheese{
+    width: 10vw;
+    margin-top: 35vw;
+    margin-left: 15vw;
+    display: none;
+}
+
+.stealingTheCheese{
+    animation: stealTheCheese 1s forwards;
+    animation-timing-function: linear;
+}
+@keyframes stealTheCheese{
+    0%{
+    margin-top: 35vw;
+    margin-left: 2vw;}
+    100%{
+    margin-top: 35vw;
+    margin-left: 5vw;}
+}
+
+
+
+.runBackAnimation{
+    animation: runBackAnim .4s forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes runBackAnim{
+    10%{
+    margin-top: 35vw;
+    margin-left: 5vw;
+    }
+    100%{
+        margin-top: 35vw;
+        margin-left: 15vw;
+
+    }
+}
+
+
+
+.runBack2{
+    animation: runBackAnim2 .6s forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes runBackAnim2{
+    0%{
+    margin-top: 35vw;
+    margin-left: 15vw;
+    }
+    30%{
+        margin-top: 39.5vw;
+        margin-left: 30vw;
+    }
+    100%{
+        margin-top: 27vw;
+        margin-left: 65vw;
+    }
+}
+
+
+#tomjumps{
+    width: 30vw;
+    margin-top: 25vw;
+    margin-left: 10vw;
+    display: none;
+}
+
+#runningtom{
+    width: 32vw;
+    margin-top: 30vw;
+    margin-left: 10vw;
+    display: none;
+}
+
+.runningTomAnimation{
+    animation: runningTomAnim 1.4s forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes runningTomAnim(){
+    0%{
+    margin-top: 30vw;
+    margin-left: 10vw;
+    }
+    100%{
+    margin-top: 20vw;
+    margin-left: 30vw;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
